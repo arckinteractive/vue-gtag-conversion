@@ -16,7 +16,7 @@
 
 # Configuration
 
-`npm install https://github.com/arckinteractive/vue-gtag-conversion.git -S` or `yarn add vhttps://github.com/arckinteractive/vue-gtag-conversion.git` if you use [Yarn package manager](https://yarnpkg.com/)
+`npm install https://github.com/arckinteractive/vue-gtag-conversion.git -S` or `yarn add https://github.com/arckinteractive/vue-gtag-conversion.git` if you use [Yarn package manager](https://yarnpkg.com/)
 
 Here is an example of configuration:
 

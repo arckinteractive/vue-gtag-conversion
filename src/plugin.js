@@ -26,13 +26,13 @@ export default class AnalyticsPlugin {
     pluginConfig.debug = val;
   }
 
-  reportConversion() {
+  reportConversion(args) {
     if (inBrowser && pluginConfig.enabled) {
-      logDebug('Recording Conversion', {
-        ...arguments,
-      });
+      logDebug('Recording Conversion', args);
 
-      gtag('event', 'conversion', { ...arguments });
+      args.event_callback = function() {};
+
+      gtag('event', 'conversion', args);
     }
   }
 }

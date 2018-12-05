@@ -20,6 +20,9 @@ export const loadScript = function (id) {
   script.async = true;
   script.src   = `https://www.googletagmanager.com/gtag/js?id=${id}`;
 
+  gtag('js', new Date());
+  gtag('config', id);
+
   document.body.appendChild(script);
 }
 
@@ -37,4 +40,6 @@ export const gtag = function() {
     const dataLayer = (window.dataLayer = window.dataLayer || []);
 
     dataLayer.push(arguments);
+
+    logDebug('Current dataLayer', window.dataLayer);
 }
